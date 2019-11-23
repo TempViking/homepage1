@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home page | Company</title>
+</head>
+<body>
+    <section class="header">
+        <div class="header__logo">
+            <svg width="49px" height="47px">
+                <use xlink:href="#logo"></use>
+            </svg>
+            <img class="header__logo-img" src="./src/images/logo_text.png" alt="Internet service provider">
+        </div>
+        <div class="header__buttons">
+            <div class="header__button header__button_green" onclick="openPopup(event)">
+                
+            </div>
+            <div class="header__button-popup header__button-popup_green">
+
+            </div>
+            <div class="header__button header__button_blue" onclick="openPopup(event)">
+                
+            </div>
+            <div class="header__button-popup header__button-popup_blue">
+
+            </div>
+        </div>
+    </section>
+    <section class="page home-page">
+        <div class="side-menu">
+            <a href="#" class="side-menu__close" onclick="openMenu(event)">
+                <svg width="2rem" height="2rem" class="side-menu__arrow">
+                    <use xlink:href="#arrow-right"></use>
+                </svg>
+                Весь сайт
+            </a>
+            <div class="side-menu__content">
+                <div class="side-menu__group">
+                    <div class="side-menu__column">
+                        <a class="side-menu__item" href="#">О компании</a>
+                        <a class="side-menu__item" href="#">Отзывы</a>
+                        <a class="side-menu__item" href="#">Вакансии</a>
+                        <a class="side-menu__item" href="#">Контакты</a>
+                    </div>
+                    <div class="side-menu__column">
+                        <a class="side-menu__item" href="#">Инструкции</a>
+                        <a class="side-menu__item" href="#">Услуги</a>
+                        <a class="side-menu__item" href="#">Документы</a>
+                        <a class="side-menu__item" href="#">Тарифы</a>
+                    </div>
+                </div>
+                <div class="side-menu__group">
+                    <div class="side-menu__column">
+                        <a class="side-menu__item" href="#">Личный кабинет</a>
+                        <a class="side-menu__item" href="#">Подключиться</a>
+                        <a class="side-menu__item" href="#">Техподдержка</a>
+                        <a class="side-menu__item" href="#">База знаний</a>
+                    </div>
+                    <div class="side-menu__column">
+                        <a class="side-menu__item" href="tel:79220321232">+7 (922) 032-12-32</a>
+                        <a class="side-menu__item" href="#">Задать вопрос</a>
+                    </div>
+                </div>
+                <div class="side-menu__column">
+
+                </div>
+            </div>
+        </div>
+        <div class="home-page__content card">
+            <img src="./src/images/pic.png" alt="Background" class="card__background">
+            <div class="card__menu menu">
+                <a href="#" class="menu__item" onclick="openMenu(event)">
+                    <svg width="24px" height="24px">
+                        <use xlink:href="#menu"></use>
+                    </svg>
+                </a>
+                <a href="#" class="menu__item">
+                    О компании
+                </a>
+                <a href="#" class="menu__item">
+                    Техподдержка
+                </a>
+                <a href="#" class="menu__item">
+                    Подключиться
+                </a>
+            </div>
+            <div class="card__content">
+                <p class="card__subtitle">Безлимитный интернет</p>
+                <p class="card__title">DN-650 за 500<br />руб/мес</p>
+                <p class="card__description">Скорость входящего/исходящего канала, Кбит/с днем 14000, ночью 20000</p>
+                <a href="#" class="card__button">
+                    Подключиться
+                    <span class="icon card__button-icon">
+                        <svg width="1rem" height="1rem">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </span>
+                </a>
+            </div>
+        </div>
+        <div class="home-page__contacts">
+            <div class="wd-slider wd-slider_custom-button">
+                <div class="wd-slider__slides">
+                    <div class="wd-slider__slide">
+                        <div class="wd-slider__box">
+                            <div class="small-card">
+                                <img src="./src/images/Bitmap.jpg" alt="Background" class="small-card__background">
+                                <div class="small-card__content"></div>
+                            </div>
+                        </div>
+                        <div class="wd-slider__box"></div>
+                        <div class="wd-slider__box wd-slider__box_large"></div>
+                    </div>
+                    <div class="wd-slider__slide">
+                        <div class="wd-slider__box" style="background-color: blue;"></div>
+                        <div class="wd-slider__box" style="background-color: yellow;"></div>
+                        <div class="wd-slider__box" style="background-color: steelblue;"></div>
+                        <div class="wd-slider__box" style="background-color: yellow;"></div>
+                    </div>
+                    <div class="wd-slider__slide">
+                        <div class="wd-slider__box" style="background-color: blueviolet;"></div>
+                        <div class="wd-slider__box" style="background-color: indianred;"></div>
+                        <div class="wd-slider__box wd-slider__box_large"></div>
+                    </div>
+                </div>
+                <div class="wd-slider__buttons">
+                    <div class="wd-slider__button">
+                        <svg width="1.7rem" height="1.7rem">
+                            <use xlink:href="#arrow-right"></use>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            <div class="contacts">
+                <div class="contacts__menu contacts-menu">
+                    <a href="#" class="contacts-menu__item">
+                        <svg class="contacts-menu__icon" width="1.7rem" height="1.7rem">
+                            <use xlink:href="#phone"></use>
+                        </svg>
+                        +7 (928) 506-67-00
+                    </a>
+                    <a href="#" class="contacts-menu__item">
+                        <svg class="contacts-menu__icon" width="1.7rem" height="1.7rem">
+                            <use xlink:href="#question"></use>
+                        </svg>
+                        Задать вопрос
+                    </a>
+                    <a href="#" class="contacts-menu__item">
+                        <svg class="contacts-menu__icon" width="1.7rem" height="1.7rem">
+                            <use xlink:href="#profile"></use>
+                        </svg>
+                        Личный кабинет
+                    </a>
+                    <a href="#" class="contacts-menu__item">
+                        <svg class="contacts-menu__icon" width="1.7rem" height="1.7rem">
+                            <use xlink:href="#search"></use>
+                        </svg>
+                        Поиск
+                    </a>
+                </div>
+                <hr>
+                <p class="copyright">©  2016 Дагестанские компьютерные сети  «ДагНет»</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
