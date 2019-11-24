@@ -30,15 +30,17 @@ window.openMenu = async function (event) {
 
 window.openPopup = async function (event) {
     event.preventDefault();
-    let targetElement = event.target.nextSibling.nextSibling;
-    if (!targetElement.classList.contains('header__button_active')) {
-        targetElement.classList.add('header__button_active');
-    } else {
-        targetElement.classList.add('header__button_closing');
+
+    let els = document.querySelectorAll('.header__button_active');
+    if (els.length > 0) {
+        els[0].classList.add('header__button_closing');
         await new Promise(resolve => setTimeout(resolve, 400));
-        targetElement.classList.remove('header__button_active');
-        targetElement.classList.remove('header__button_closing');
+        els[0].classList.remove('header__button_active');
+        els[0].classList.remove('header__button_closing');
     }
+
+    let targetElement = event.target.nextSibling.nextSibling;
+    targetElement.classList.add('header__button_active');
 }
 
 window.addEventListener('load', function () {
